@@ -19,36 +19,17 @@
 
       <script type="text/javascript">
 
-        function keyboard (key) {
 
-          if (key.keyCode == 39) {
-            console.log("right");
-            x = x + dx;
-          } else if (key.keyCode == 37) {
-            console.log("left");
-            x = x - dx;
-          } else if (key.keyCode == 38) {
-            console.log("Top");
-            y = y - dy;
-          } else if (key.keyCode == 40) {
-            console.log("Down");
-            y = y + dy;
-          }
-
-          cuadrado.style.left = x + "px";
-          cuadrado.style.top = y + "px";
-
+        function ocultar() {
+          cuadrado.style.visibility = "hidden";
         }
 
-        cuadrado = document.getElementById("cuadrado");
-        document.addEventListener("keydown", keyboard)
+        function visible() {
+          cuadrado.style.visibility = "visible";
+        }
+        cuadrado = document.getElementById('cuadrado');
+        cuadrado.addEventListener("click", ocultar);
 
-        x = 100
-        dx = 10
-        y = 100
-        dy = 10
-        cuadrado.style.left = x + "px";
-        cuadrado.style.top = y + "px";
     </script>
   </body>
 </html>
