@@ -36,29 +36,29 @@
 
         function keyboard (key) {
             //console.log(key.keyCode)
-            if ((x<=25)|| (x+100>=1000)||(y<=200)||(y+100>=900)) { x=25
+            if ((x<=25)|| (x+100>=1000)||(y<=200)||(y+100>=900)) {
               //colisión x
-                }else{
+            }else{
               //funcionamiento normal
-                  }
 
-            if (key.keyCode == 39) {
-                console.log("right");
-                x = x + dx;
-            } else if (key.keyCode == 37) {
-                console.log("left")
-                x = x - dx;
-            } else if (key.keyCode == 38) {
-                console.log("top")
-                y = y - dy;
-            } else if (key.keyCode == 40) {
-                console.log("down")
-                y = y + dy;
+
+              if (key.keyCode == 39) {
+                  console.log("right");
+                  x = x + dx;
+              } else if (key.keyCode == 37) {
+                  console.log("left")
+                  x = x - dx;
+              } else if (key.keyCode == 38) {
+                  console.log("top")
+                  y = y - dy;
+              } else if (key.keyCode == 40) {
+                  console.log("down")
+                  y = y + dy;
+              }
+              c1.style.left = x + "px";
+              c1.style.top = y + "px";
             }
-            c1.style.left = x + "px";
-            c1.style.top = y + "px";
-
-        }
+          }
         // main program
         //
         c1 = document.getElementById("cuadrado1");
