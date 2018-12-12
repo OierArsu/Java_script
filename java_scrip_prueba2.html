@@ -10,14 +10,13 @@
             width: 100px;
             height: 100px;
             background-color: orangered;
-            box-shadow: 10px 10px;
             position:absolute;
             top:"0px";
             left:"0px";
         }
         .campo{
           width: 1000px;
-          height: 1000px;
+          height: 900px;
           background-color: blue;
           border: 1px;
           position:absolute;
@@ -37,6 +36,11 @@
 
         function keyboard (key) {
             //console.log(key.keyCode)
+            if ((x<=25)|| (x+100>=1000)||(y<=200)||(y+100>=900)) { x=25
+              //colisión x
+                }else{
+              //funcionamiento normal
+                  }
 
             if (key.keyCode == 39) {
                 console.log("right");
