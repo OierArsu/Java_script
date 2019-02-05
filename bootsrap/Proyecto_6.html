@@ -4,6 +4,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Proyecto</title>
+    <style>
+    .map-container-5{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    }
+    .map-container-5 iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+    }
+</style>
   </head>
   <body>
 
@@ -34,6 +49,42 @@
                           </ul>
                         </div>
                 </nav>
+
+
+
+                <!--Grid row-->
+                <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6 mb-4">
+
+                    <!--Card-->
+                    <div class="card card-cascade narrower">
+
+                      <!--Card image-->
+                      <div class="view view-cascade gradient-card-header blue-gradient">
+                        <h5 class="mb-0">Regular map</h5>
+                      </div>
+                      <!--/Card image-->
+
+                      <!--Card content-->
+                      <div class="card-body card-body-cascade text-center">
+
+                        <!--Google map-->
+                        <div id="map-container-google-8" class="z-depth-1-half map-container-5" style="height: 300px">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51170.8482637534!2d-4.484286284696312!3d36.718285672544056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7259c44fdb212d%3A0x6025dc92c9ca32cf!2zTcOhbGFnYQ!5e0!3m2!1ses!2ses!4v1549367912227"
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+
+                      </div>
+                      <!--/.Card content-->
+
+                    </div>
+                    <!--/.Card-->
+
+                  </div>
+                </div>
+
 
                 <!-- https://getbootstrap.com/docs/4.0/utilities/position/ -->
                 <!-- https://getbootstrap.com/docs/4.2/utilities/sizing/ -->
