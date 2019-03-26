@@ -1,0 +1,45 @@
+> punto = {x: 0, y:0 }
+{ x: 0, y: 0 }
+> punto.x
+0
+> punto.x = 13
+13
+> punto.y = 23
+23
+> punto.y
+23
+> punto = {x: 0, y:0, x1:10, y1:0, x2:0, y2:10, x3:10, y3:10 }
+{ x: 0, y: 0, x1: 10, y1: 0, x2: 0, y2: 10, x3: 10, y3: 10 }
+> punto.x2
+0
+> punto.y3
+10
+> punto.y3,x2
+ReferenceError: x2 is not defined
+> punto.y3.x2
+undefined
+> punto.3
+punto.3
+     ^^
+
+SyntaxError: Unexpected number
+
+> alumno ={nombre:"Koxme", edad:23}
+{ nombre: 'Koxme', edad: 23 }
+> alumno2 ={nombre:"Oier", edad:20}
+{ nombre: 'Oier', edad: 20 }
+> alumno3 ={nombre:"Aser", edad:21}
+{ nombre: 'Aser', edad: 21 }
+> alumno.nombre2
+undefined
+> alumno2.nombre
+'Oier'
+> alumno4 ={nombre:"Jokin", edad:19, notas: [{redes:4},{web:10}]}
+{ nombre: 'Jokin',
+  edad: 19,
+  notas: [ { redes: 4 }, { web: 10 } ] }
+> alumno4.notas[1]
+{ web: 10 }
+> alumno4.notas[0]
+{ redes: 4 }
+>
